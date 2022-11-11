@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@ledgerhq/connect-kit-loader': ^1.0.0-beta.4
+  '@ledgerhq/connect-kit-loader': ^1.0.0-beta.5
   '@size-limit/preset-small-lib': ^8.1.0
   '@types/react': ^18.0.24
   '@types/react-dom': ^18.0.8
@@ -15,7 +15,7 @@ specifiers:
   typescript: ^4.8.4
 
 dependencies:
-  '@ledgerhq/connect-kit-loader': 1.0.0-beta.4
+  '@ledgerhq/connect-kit-loader': 1.0.0-beta.5
   '@wagmi/core': 0.5.6_ethers@5.7.2+react@18.2.0
   ethers: 5.7.2
 
@@ -1803,8 +1803,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@ledgerhq/connect-kit-loader/1.0.0-beta.4:
-    resolution: {integrity: sha512-qfGhkrPjTlXMQLI3+jj/KyHObn6BRjVRWlckndj9NCsjJJmUHvtFa8f3eV8czf5TvujXkDejpK1boNzCMV/3Jw==}
+  /@ledgerhq/connect-kit-loader/1.0.0-beta.5:
+    resolution: {integrity: sha512-zNO6GktIjiec5JEgLirxPqSvJf9ZldCNXj6FbsTRO+B8ynYOE5+RUv90CvLwCA/GZLhtrXsczmz2fX0vxjknWQ==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:

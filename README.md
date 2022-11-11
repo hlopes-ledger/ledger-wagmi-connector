@@ -11,9 +11,9 @@ It can be used to add a Ledger button to your DApp.
 Here is an example of a wagmi client using the Ledger wagmi connector.
 
 ```ts
-import { configureChains, defaultChains } from "wagmi";
-import { publicProvider } from "wagmi/providers/public";
-import { LedgerConnector } from "@ledgerhq/ledger-wagmi-connector";
+import { configureChains, defaultChains } from 'wagmi';
+import { publicProvider } from 'wagmi/providers/public';
+import { LedgerConnector } from '@ledgerhq/ledger-wagmi-connector';
 
 // Configure chains for connectors to support
 const { chains } = configureChains(defaultChains, [
@@ -25,7 +25,16 @@ export const connectors = {
   ledger: new LedgerConnector({
     chains,
     options: {
-      ...
+      enableDebugLogs: false,
+      // passed to WalletConnect
+      chainId: 1,
+      // specify if no rpc, passed to WalletConnect
+      infuraId: 'YOUR_INFURA_ID',
+      // specify chain:URL if no infuraId, passed to WalletConnect
+      rpc: {
+        1: 'https://cloudflare-eth.com/', // Mainnet
+        137: 'https://polygon-rpc.com/',  // Polygon
+      }
     }
   }),
 };
